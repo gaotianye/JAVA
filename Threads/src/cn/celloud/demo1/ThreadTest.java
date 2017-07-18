@@ -13,5 +13,13 @@ public class ThreadTest {
 		t2.setName("thread-1");
 		t1.start();
 		t2.start();
+		/**
+		 * 	线程Thread-2正在运行中。。。。。
+			线程Thread-3正在运行中。。。。。
+		 */
+		Thread2 t3 = new Thread2();
+		Thread2 t4 = new Thread2();
+		t3.start();
+		t4.start();
 	}
 }
