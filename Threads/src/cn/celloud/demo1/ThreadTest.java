@@ -44,5 +44,14 @@ public class ThreadTest {
 		Thread3 t_name4 = new Thread3("yuwei");
 		t_name3.start();
 		t_name4.start();
+		/**
+		 * myName照样不管用
+		 * 线程Thread-8正在执行中
+			线程Thread-9正在执行中
+		 */
+		Thread4 t_my_name1 = new Thread4("gaotianye");
+		Thread4 t_my_name2 = new Thread4("yuwei");
+		t_my_name1.start();
+		t_my_name2.start();
 	}
 }
