@@ -2,7 +2,7 @@ package cn.celloud.demo3;
 
 public class SysTest {
 	public static void main(String[] args) {
-		Sys1 sys1 = new Sys1();
+		Sys3 sys1 = new Sys3();
 		Thread t1 = new Thread(sys1);
 		Thread t2 = new Thread(sys1);
 		Thread t3 = new Thread(sys1);
