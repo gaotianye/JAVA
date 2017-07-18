@@ -53,5 +53,14 @@ public class ThreadTest {
 		Thread4 t_my_name2 = new Thread4("yuwei");
 		t_my_name1.start();
 		t_my_name2.start();
+		/**
+		 * JDK1.8之前，是可以在创建对象时就执行name的。但是1.8时就不可以了
+		 */
+		Demo demo1 = new Demo("xiaoqiang");
+		Demo demo2 = new Demo("wangcai");
+		demo1.setName("小强");
+		demo2.setName("旺财");
+		demo1.start();
+		demo2.start();
 	}
 }
