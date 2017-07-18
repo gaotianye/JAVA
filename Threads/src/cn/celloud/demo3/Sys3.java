@@ -3,7 +3,7 @@ package cn.celloud.demo3;
  * 解决重复消费资源问题
  * 方案2：同步函数
  * 
- * 当前锁就是this对象
+ * 当前锁就是this对象，但是static中无法使用this，所以建议使用同步代码块
  * @author gaotianye
  *
  */
