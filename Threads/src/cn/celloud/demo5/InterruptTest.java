@@ -2,7 +2,9 @@ package cn.celloud.demo5;
 /**
  * main函数中，interrupt()仅仅是个标记，只有在run中判断isInterrupted为true时，
  * 才会真正中断线程。
- * TODO 但是run中不能有sleep方法，不然中断失败。
+ * 但是run中不能有sleep方法，不然中断失败。
+ * 分析：这是因为一旦在sleep期间发生中断，那么会调到catch方法中，
+ * 但是会清除中断状态，此时还需要执行一次interrupt才可以
  * @author gaotianye
  *
  */
